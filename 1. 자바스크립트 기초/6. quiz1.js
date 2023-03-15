@@ -7,7 +7,7 @@
 // }
 
 
- 
+
 // for(var i=firstNumber;i<=secondNumber;i++){
 //    sum+=i
 //    sum++
@@ -15,5 +15,3 @@
 // }
 // alert(`&{firstNumber} ~ &{secondNumber}까의 누적합 : ` sum)
 // alert(sum);
-
-
