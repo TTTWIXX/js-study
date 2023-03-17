@@ -34,3 +34,21 @@ while (true) {
 
 //My code
 
+
+var dongbangMember=['유노윤호', '최강창민', '영웅재중', '믹키유천', '시아준수'];
+while(dongbangMember.length>0){
+var updateMember=prompt(`수정할 멤버 이름을 입력하세요`);
+
+var checklist=dongbangMember.includes(updateMember)
+if(checklist===true){
+    var indexNumber=dongbangMember.indexOf(updateMember)
+    var newdongbangMember=dongbangMember.splice(indexNumber,1);
+    alert(newdongbangMember);
+    break;
+
+}else{
+    alert(`${updateMember}은(는) 잘못된 이름입니다.`)
+}
+}
+
+
