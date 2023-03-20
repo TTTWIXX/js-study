@@ -10,12 +10,7 @@
 6. 로그인이 성공할때까지 반복하세요.
 */
 var userInfo = {
-<<<<<<< HEAD
-    userList: [
-        {
-=======
     userList: [{
->>>>>>> 467d2f60fe2933bc7b63e2042041944d8b1f64bc
             account: 'kim1234',
             password: 'kkk1234',
             username: '김두한'
@@ -81,7 +76,6 @@ while (true) {
         alert('존재하지 않는 회원입니다.');
     }
 
-<<<<<<< HEAD
 }
 
 
@@ -119,6 +113,3 @@ while (true) {
 //     alert(`비밀번호가 틀렸습니다.`)
 // }
 // }
-=======
-}
->>>>>>> 467d2f60fe2933bc7b63e2042041944d8b1f64bc
