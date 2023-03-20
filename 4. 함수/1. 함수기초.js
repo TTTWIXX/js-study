@@ -1,6 +1,6 @@
 // 함수 정의 - 만든다
 
-function happyGreeting(yourName){
+function happyGreeting(yourName) {
     console.log(`${yourName}님 안녕하세요!`);
     console.log(`오늘도 즐거운 하루되세요~~~`);
 }
@@ -9,21 +9,21 @@ function happyGreeting(yourName){
 
 happyGreeting(`이순신`);
 
-function makeLine(){
+function makeLine() {
     console.log(`==========================`);
 }
 
 //함수를 사용하는 이유
 //재사용하기위해서 , 코드의 모듈화
-for(var i=0 ; i<5; i++){
-makeLine()
+for (var i = 0; i < 5; i++) {
+    makeLine()
 }
 
 //원의 넓이를 자주 구한다. 원주율 * 반지름 ^2
 
-function calcAreaCircle(r){
+function calcAreaCircle(r) {
     var PI = 3.14159265;
-    var area= PI*r**2;
+    var area = PI * r ** 2;
     return area;
 }
 var area;
@@ -74,8 +74,6 @@ function makeLine() {
 for (var i = 0; i < 5; i++) {
     makeLine();
 }
-
-
 
 
 // 원의 넓이를 자주 구한다. 원주율 * 반지름 ^ 2
