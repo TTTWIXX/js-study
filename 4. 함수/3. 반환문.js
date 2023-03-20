@@ -34,6 +34,8 @@ function callName(nickName){
     var prohibits = [`멍청이`, `돌아이`, `홍길동`]
     if(prohibits.includes(nickName)){
          return console.log(`잘못된 닉네임은 인사를 못해줘 이놈아`);
+    }
+}
 function add(n1, n2) {
     
     return n1 + n2; // 탈출문

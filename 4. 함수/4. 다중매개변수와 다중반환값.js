@@ -19,6 +19,7 @@ function addAll(...numbers){
 
 //배열이 2개이상부터는 구분하기 힘들기때문에 
 // 한개있을때만 ... 을써야한다.
+
 var r1 = addAll(1,3,5,10,20);
 console.log(`r1: ${r1}`);
 
