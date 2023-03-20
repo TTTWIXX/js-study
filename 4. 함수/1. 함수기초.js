@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // 함수 정의 - 만든다
 
 function happyGreeting(yourName){
@@ -31,7 +30,6 @@ var area;
 
 console.log(area);
 
-=======
 
 /*
 console.log('김철수님 안녕하세요! 방가방가!');
@@ -97,4 +95,3 @@ console.log(calcAreaCircle(15));
 
 //~~~~
 var r3 = calcAreaCircle(20);
->>>>>>> 467d2f60fe2933bc7b63e2042041944d8b1f64bc

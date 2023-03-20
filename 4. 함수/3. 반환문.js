@@ -1,5 +1,4 @@
 
-<<<<<<< HEAD
 function add(n1,n2){
     var result = n1+n2;
     return result; // 탈출문
@@ -35,7 +34,6 @@ function callName(nickName){
     var prohibits = [`멍청이`, `돌아이`, `홍길동`]
     if(prohibits.includes(nickName)){
          return console.log(`잘못된 닉네임은 인사를 못해줘 이놈아`);
-=======
 function add(n1, n2) {
     
     return n1 + n2; // 탈출문
@@ -77,7 +75,6 @@ function callName(nickName) {
     if (prohibits.includes(nickName)) {
         console.log(`잘못된 닉네임은 인사를 못해줘 이놈아`);
         return;
->>>>>>> 467d2f60fe2933bc7b63e2042041944d8b1f64bc
     }
     console.log(`${nickName}님 안녕하세요!`);
 }
