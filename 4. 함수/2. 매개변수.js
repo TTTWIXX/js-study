@@ -17,7 +17,8 @@ function calcRangeTotal(begin,end){
     var total=0; //총합을 저장할 변수
     for(var i=begin;i<=end;i++){
         total+=i;
-
+    }
+}
 /*
     description: x ~ y까지의 총합을 구하는 함수
     parameter:

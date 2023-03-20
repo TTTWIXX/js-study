@@ -14,12 +14,7 @@ function myIndexOf(arr, element) {
 
 function myIncludes(arr, element) {
 
-    for (var i = 0; i < arr.length; i++) {
-        if (element === arr[i]) {
-            return true;
-        }
-    }
-    return false;
+    return myIndexOf(arr,element)!==-1;
 }
 
 
