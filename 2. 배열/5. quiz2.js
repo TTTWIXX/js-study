@@ -47,5 +47,4 @@ while (true) {
     alert(dongbang)
     if (dongbang.length === 0)
         break;
-
-}
+    }

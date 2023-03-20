@@ -14,8 +14,7 @@ if (memberNum < 5 && memberNum >= 2) {
 
 
 var bullet = +prompt('실탄 개수(1~5개)')
- var startIndex = Math.floor(Math.random() * memberNum);
-   
+var startIndex = Math.floor(Math.random() * memberNum);
 if (bullet > 0 && bullet <= 5) {
    
     // 장전완료!!!
@@ -23,12 +22,29 @@ if (bullet > 0 && bullet <= 5) {
     for (var k = 0; k < bullet; k++) {
         bulletCase.splice(k, 1, 1);
     }
-
     // 첫번째순서 확정
 
     alert(`${member[startIndex]}부터 시작합니다.`);
     alert(`[${member[startIndex]}님의 턴!] 탄창을 회전합니다.`)
-    member[startIndex] =  member.splice(startIndex,0,parseInt( Math.floor(Math.random() * (6))));
+    rd=Math.floor(Math.random() * 6)
+    alert(rd)
+    member = member.splice(startIndex,1,rd);
+
+
+
+    function updateArray(myArray, oldValue, newValue) {
+  if (!myArray instanceof Array) return;
+
+  const index = myArray.indexOf(oldValue);
+  if (index !== -1) {
+    myArray[index] = newValue;
+  }
+}
+
+
+
+
+
     alert(member);
     prompt('엔터를 누르면 격발합니다. Its high noon');
     // 첫번째순서부터 격발
