@@ -6,9 +6,9 @@ var dog = {
     'name': '뽀삐',
     age: 3,
     //'for waiting': 11,
-    injection: true,
+    injection: true, //boolean도 가능하다.
     favorite: ['산책', '간식'],
-    hate: null,
+    hate: null, // null 도 가능
     kind: '진돗개',
 };
 
@@ -37,6 +37,8 @@ dog.favorite.push('꼬리 흔들기');
 console.log(dog);
 
 dog.favorite.slice(1).splice(1, 1);
+//slice를 하면 copy본이 생성된다. 
+console.log(dog.favorite.slice(1).splice(1, 1));
 
 // 프로퍼티 참조 2
 console.log('========================');
@@ -46,6 +48,7 @@ console.log(dog['injection']);
 // key를 변수에 저장
 var fv = 'favorite';
 console.log(cat[fv]);
+//변수에 저장하여 넣을때는 ''안붙인다.
 
 
 // 프로퍼티 값 수정
@@ -65,7 +68,7 @@ console.log(cat);
 delete cat.owner;
 console.log(cat);
 
-console.log('======================');
+console.log('----------------------------');
 
 // 프로퍼티 존재 유무 확인
 // key를 반드시 문자열로 표기해야함.
@@ -120,8 +123,6 @@ var articles = {
         }
     ]
 };
-
-console.log('========================');
 console.log(articles.totalCount);
 console.log(articles.articleList[1].writer);
 console.log(articles.articleList[2].regDate);
