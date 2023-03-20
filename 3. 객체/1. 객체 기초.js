@@ -11,8 +11,8 @@ var dog = {
     hate: null, // null 도 가능
     kind: '진돗개',
 };
-
-
+// 프로퍼티 존재 여부 확인하기 (key 값만 확인 가능)
+console.log('name' in dog);
 
 "hello".slice();
 
@@ -79,6 +79,8 @@ console.log(ageFlag);
 // master라는 프로퍼티가 없으면 추가해라
 var m = 'master';
 
+
+
 if (!(m in cat)) {
     cat[m] = '김또또';
 }
@@ -90,6 +92,7 @@ console.log('=========================');
 //예시 : 게시판
 
 var articles = {
+
     totalCount: 25578,  //총 게시물 수
     admin: 'abc1234', //게시판 관리자 아이디
     page: 2558, //총 페이지 수

@@ -9,7 +9,7 @@
 
 
 // 매개변수(parameter): 함수를 정의할 때 
-// 외부에서 받아오는 값을 저강할 변수
+// 외부에서 받아오는 값을 저장할 변수
 function calcRangeTotal(begin,end){
 
     console.log(`x:${begin}, y:${end}`);
@@ -19,6 +19,7 @@ function calcRangeTotal(begin,end){
         total+=i;
     }
 }
+
 /*
     description: x ~ y까지의 총합을 구하는 함수
     parameter:
@@ -29,6 +30,7 @@ function calcRangeTotal(begin,end){
 
 // 매개변수(parameter): 함수를 정의할 때 
 // 외부에서 받아오는 값을 저장할 변수
+
 function calcRangeTotal(begin, end) {
 
     // console.log(`x: ${begin}, y: ${end}`);
@@ -51,6 +53,7 @@ console.log(`result2: ${calcRangeTotal(1,50)}`);
 //ES6
 //기본값 즉 아무것도 적지않았을 경우 자동으로 한국어로 생각하고
 //값을 리턴해준다.
+
 function sayHello(language=`한국어`){
 
 
