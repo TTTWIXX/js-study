@@ -11,32 +11,33 @@
  # 출력 예시: 
  "키 -> 178.4cm, 체중-> 78.2kg의 체질량지수는: 24.57입니다"
  */
- 
- function calcBMI(h,w){
-    var calBMI = w/((0.0001)*h*h);
 
-    if(calBMI>=25.0){
-        console.log("당신은 과체증입니다."); 
+function calcBMI(h, w) {
+    var calBMI = w / ((0.0001) * h * h);
+
+    if (calBMI >= 25.0) {
+        console.log("당신은 과체증입니다.");
         return calBMI;
-    }else if(calBMI<=18.5){
-         console.log("당신은 저체중입니다."); 
-         return calBMI;
-    }else{
+    } else if (calBMI <= 18.5) {
+        console.log("당신은 저체중입니다.");
+        return calBMI;
+    } else {
         console.log("당신은 정상체중입니다.");
         return calBMI;
-        
+
     }
- }
+}
 
 
- function round(myBmi,digit){
+function round(myBmi, digit) {
 
-    return myBmi;
     //2자리에서 반올림
+    return Math.round(myBmi * 10 ** digit) / 10 ** digit
 
- }
+}
 
- var h = 178.4, w = 78.2;
- var myBmi = calcBMI(h, w);
- 
- console.log(`키 -> ${h}cm, 체중 -> ${w}kg의 체질량지수는 ${round(myBmi, 2)}입니다.`);
+var h = 178.4,
+    w = 78.2;
+var myBmi = calcBMI(h, w);
+
+console.log(`키 -> ${h}cm, 체중 -> ${w}kg의 체질량지수는 ${round(myBmi, 2)}입니다.`);

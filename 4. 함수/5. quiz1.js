@@ -9,7 +9,32 @@ Q. n의 약수의 개수를 구하기
    나누어 떨어졌을 시 약수의 개수 카운트를 1증가시키고 출력.
 */
 
-// 호출부
+
+//Teacher's code
+
+function calcDivisor(targetNumber){
+
+    //약수들을 저장할 배열
+    var divisor = [];
+    for(var i=1;i<=targetNumber;i++){
+        if(targetNumber%i===0){
+            divisor.push(i);
+        }
+    }
+    console.log(`${targetNumber}의 약수 : ${divisor}`);
+    return divisor.length;
+}
+
+
+
+
+
+
+
+
+
+// My code
+
 
 function calcDivisor(n){
     var resultDivisor=0;
