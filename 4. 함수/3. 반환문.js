@@ -81,19 +81,6 @@ function callName(nickName) {
 
 callName('돌아이');
 
-<<<<<<< HEAD
-function  stopLoop(flag) {
-    while(true){
-        var flag =prompt(`명령어를 입력하세요!`);
-        if(flag===`멈춰`){
-            break;
-            // break 대신 return을 쓰면 함수 자체를 끝내기 때문데
-            // 아래 `수고용~'까지 무시하게된다.
-        }
-        alert(flag);
-    }
-    alert(`수고용~`);
-=======
 
 function stopLoop() {
 
@@ -106,7 +93,6 @@ function stopLoop() {
     }
 
     alert('수고용~');
->>>>>>> 467d2f60fe2933bc7b63e2042041944d8b1f64bc
 }
 
 stopLoop();
