@@ -48,8 +48,8 @@ console.log('오늘도 즐거운 하루되세요~~~');
 
 */
 
-
 // 함수 정의 - 만든다
+
 function happyGreeting(yourName) {
     console.log(`${yourName}님 안녕하세요! 어쩔티비!`);
     console.log('오늘도 즐거운 하루되세요~~~ㅋㅋ루삥뽕');

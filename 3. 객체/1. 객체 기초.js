@@ -14,6 +14,7 @@ var dog = {
 // 프로퍼티 존재 여부 확인하기 (key 값만 확인 가능)
 console.log('name' in dog);
 
+
 "hello".slice();
 
 var cat = {
@@ -48,6 +49,7 @@ console.log(dog['injection']);
 // key를 변수에 저장
 var fv = 'favorite';
 console.log(cat[fv]);
+
 //변수에 저장하여 넣을때는 ''안붙인다.
 
 
@@ -78,6 +80,7 @@ console.log(ageFlag);
 
 // master라는 프로퍼티가 없으면 추가해라
 var m = 'master';
+
 
 
 
@@ -134,11 +137,15 @@ var bbs = articles.articleList;
 
 bbs[0].writer;
 
+
 var cnt = 0;
+var cont =0;
 
 for (var x in articles) {
     console.log(`${++cnt}!!`);
+    console.log(`${cont++}@@`);
 }
+
 for (var y of bbs) {
 
 }
