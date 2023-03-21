@@ -14,6 +14,7 @@ console.log(n4);
 
 var n5 = +'99';
 
+console.log(typeof n5);
 
 console.log('=============================================');
 
@@ -22,7 +23,7 @@ console.log('=============================================');
 
 
 
-// js에서는 0, '', null, nundefined. NaN는 거짓으로 판단한다. 암기!!!!!
+// js에서는 0, '', null, undefined. NaN는 거짓으로 판단한다. 암기!!!!!
 
 // Falsy
 if (undefined) console.log('ok1');
