@@ -6,7 +6,7 @@ console.log(27 % 5);
 // 뒤에 숫자가 더크면 앞에숫자가 나머지
 console.log(4 % 10);
 
-// console.log(77 % 0); 
+// console.log(77 % 0);
 console.log(0 % 77);
 
 // 거듭제곱 연산
