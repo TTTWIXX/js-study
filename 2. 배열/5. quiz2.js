@@ -13,6 +13,9 @@
 //Teacher's code
 
 var tvxq = ['유노윤호', '최강창민', '영웅재중', '믹키유천', '시아준수'];
+if(tvxq[5]===undefined){
+   alert('맞아?') 
+}
 
 
 while (tvxq.length > 0) {
