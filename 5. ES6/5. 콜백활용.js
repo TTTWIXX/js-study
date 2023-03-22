@@ -69,6 +69,8 @@ console.log('==========================');
 // 필터링해서 새로운 배열에 담아줘
 
 const twoHobby=userList.forEach().map(u=>u.hobbys.length===2)
+
+
 console.log(twoHobby);
 
 
@@ -87,7 +89,6 @@ function filter2Hobby() {
       filteredArray.push(user);
     }
   }
-
   return filteredArray;
 }
 
