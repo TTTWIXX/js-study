@@ -37,12 +37,7 @@ function alertUserInfo(wannaSay) {
 }
 
 alertUserInfo(u => console.log(`나는 ${u.userName}님이시다! 우허하`));
-
-alertUserInfo( function wannaSay (u){
- console.log(`나는 ${u.userName}님이시다! 우허하`)
-} );
-
-// 배열 고차 함수
+alertUserInfo(u => console.log(`나는 ${u.userName}님이시다! 우허하`));
 // forEach() : 배열의 요소를 반복하면서 하나씩 꺼내줌
 console.log('=======================');
 userList.forEach(user => {
@@ -63,9 +58,6 @@ numbers.forEach(n => total += n);
 console.log(`총합: ${total}`);
 
 console.log('==========================');
-
-
-// 취미가 딱 2개인 회원들만 
 // 필터링해서 새로운 배열에 담아줘
 
 const twoHobby=userList.forEach().map(u=>u.hobbys.length===2)
@@ -91,11 +83,20 @@ function filter2Hobby() {
   }
   return filteredArray;
 }
+console.log(filter2Hobby());
 
 // 경기 사는 회원들만 
 // 필터링해서 새로운 배열에 담아줘
-function filterUserLivedInSeoul() {
 
+userList.filter(u => u.address === '경기')
+
+
+
+
+
+
+
+function filterUserLivedInSeoul() {
   // 새로운 배열 생성
   const filteredArray = [];
 
@@ -124,14 +125,6 @@ function filter(condition) {
   return filteredArray;
 }
 
-
-
-// const newArray = filter2Hobby();
-// console.log(newArray);
-
-// const newArray = filter(u => u.address === '서울');
-const newArray = filter(u => u.hobbys.length >= 3);
-console.log(newArray);
 
 
 // 배열 고차함수 filter()
@@ -166,6 +159,7 @@ console.log(userNames);
 // userList에서 원하는 프로퍼티 값을 매핑하는 함수
 function myMap(callback) {
 
+
   // 이름만 담을 배열
   const mappedArray = [];
 
@@ -175,10 +169,8 @@ function myMap(callback) {
   return mappedArray;
 }
 
-const userNames2 = myMap(user => ({
-  userName: user.userName,
-  address: user.address
-}));
+const userNames2 = myMap(user => ({userName: user.userName,  address: user.address})); // 이거 배열이다.
+
 console.log(userNames2);
 
 console.log('=========================');
