@@ -122,14 +122,6 @@ function filter(condition) {
 
   return filteredArray;
 }
-
-
-
-// const newArray = filter2Hobby();
-// console.log(newArray);
-
-// const newArray = filter(u => u.address === '서울');
-const newArray = filter(u => u.hobbys.length >= 3);
 console.log(newArray);
 
 
