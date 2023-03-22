@@ -34,6 +34,7 @@ function counterClosure() {
 
 
 const counter = counterClosure();
+                            // () 리턴값// ()없으면 함수 자체
 
 const increase = counter.increase;
 const decrease = counter.decrease;

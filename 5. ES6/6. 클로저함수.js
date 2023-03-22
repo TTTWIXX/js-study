@@ -7,9 +7,9 @@ function calculator(n1, n2) {
 }
 
 // const calculator=(n1, n2)=> () => n1 +n2;    
+
 // function calculator(n1, n2) {
 //     return () => n1+n2;
-
 // }
 
 
@@ -36,31 +36,30 @@ function calculator(n1, n2) {
 
 
 
-// const increse=() =>{
-//     let count=0;
-//     return ++count;
+const increse=() =>{
+    let count=0;
+    return ++count;
 
-// };
-
-// console.log(increse());
-// console.log(increse());
-// console.log(increse());
+};
+console.log(increse());
+console.log(increse());
+console.log(increse());
 // 카운팅이 되지않는다.
 
-// const increseClosure = ()=>{
-//     let count = 0; // 지역 변수
+const increseClosure = ()=>{
+    let count = 0; // 지역 변수
 
-//     // const increse=() => ++count;
-//     // return increse;
+    // const increse=() => ++count;
+    // return increse;
 
-//     return () => ++count;
+    return () => ++count;
 
-// };
+};
 
-// const increaser=increseClosure();
-// console.log(increaser());
-// console.log(increaser());
-// console.log(increaser());
+const increaser=increseClosure();
+console.log(increaser());
+console.log(increaser());
+console.log(increaser());
 
 // 즉시 실행 함수: 정의와 동시에 호출
 const result = ((n1, n2) =>{
@@ -71,14 +70,14 @@ const result = ((n1, n2) =>{
 console.log(result);
 
 
-const increse= (() => {
-    let count = 0; // 지역 변수
+// const increse= (() => {
+//     let count = 0; // 지역 변수
 
     // const increse=() => ++count;
     // return increse;
 
-    return () => ++count;
+//     return () => ++count;
 
-})();
+// })();
 
-console.log(increse());
+// console.log(increse());
