@@ -19,12 +19,12 @@ function add(n1,n2) {
 
 
 const plus = add;
-// const plust = add(1,5) 와 완전 다른 것이다.
+// const plus = add(1,5) 와 완전 다른 것이다.
 
 console.log(plus);
 
 
-// add라는 함수 자체렬 plus에 집어 넣는다.
+// add라는 함수 자체를 plus에 집어 넣는다.
 
 // 무명함수 생성 : 함수 리터럴(값이다 ; 붙어야한다.)
 const sub=function (n1, n2) {

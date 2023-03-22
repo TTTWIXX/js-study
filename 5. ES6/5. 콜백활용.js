@@ -59,6 +59,18 @@ console.log(`총합: ${total}`);
 
 console.log('==========================');
 // 필터링해서 새로운 배열에 담아줘
+
+const twoHobby=userList.forEach().map(u=>u.hobbys.length===2)
+
+
+console.log(twoHobby);
+
+
+
+
+
+
+
 function filter2Hobby() {
 
   // 새로운 배열 생성
@@ -69,7 +81,6 @@ function filter2Hobby() {
       filteredArray.push(user);
     }
   }
-
   return filteredArray;
 }
 console.log(filter2Hobby());
