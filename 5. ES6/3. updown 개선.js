@@ -68,7 +68,9 @@ function runUpdownGame(gameData) {
 
     if (!inputAnswerAndValidate(gameData)) continue;
 
-    gameData.countDown--;
+      //gameDatta 디스트럭처링
+      // 디스트럭처링은 사본을 복사라하는거라 원본에 적용되지 않습니다.
+    const{countDown,secret,andwer,gameEndFlag}=gameData;
 
     if (gameData.secret === gameData.answer) {
       alert(`정답입니다! ${gameData.initCount - gameData.countDown}번만에 맞췄습니다!`);

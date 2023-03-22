@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li id="apple">사과</li>
+        <li id="banana" style="background: greenyellow;">바나나</li>
+        <li id="grape">포도</li>
+        <li id="peach">복숭아</li>
+    </ul>
+    
+    <script>
+        // console.log(document.body.firstElementChild);
+
+        const $banana =document.getElementById(`banana`); //변수앞에 달러를 적어주면 태그가있는 변수라는 관례가 있다.
+
+        // banana는 객체다.document는 객체이므로 
+        console.log(banana.attributes.id);
+        banana.style.background ='red';
+
+        //id가 grape인 요소노드를 취득하여
+        //배경색상을 violet으로 가로길이를 fit-content변경
+        const $grape=document.getElementById('grape');
+        $grape.style.width='fit-content';
+        $grape.style.background='violet';
+        
+    </script>
+
+</body>
+</html>
