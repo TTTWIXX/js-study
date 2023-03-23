@@ -225,9 +225,6 @@ console.log(newArray);
 
 
 
-
-
-
 const appleBasket = [{
         color: 'green',
         sweet: 13

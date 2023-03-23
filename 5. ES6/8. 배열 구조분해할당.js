@@ -9,7 +9,7 @@ console.log(kim);
 console.log(kang);
 console.log(park);
 
-const [firstObj] = [{id:1},{id:2},{id:3}].filter(obj=>obj.id>=2)
+const [firstObj] = [{id:1},{id:2},{id:3}].filter(obj=>obj.id>=2);
 console.log(firstObj);
 
 // 변수 교환하기
@@ -21,6 +21,7 @@ console.log(first);
 console.log(second);
 
 // 앞에 2개는 변수에 각각 넣고 나머지는 다시 배열로 묶고싶다.
+
 const numbers= [1,3,5,7,9,11];
 // const copyNumber=numbers.slice();
 
