@@ -29,10 +29,18 @@
         }
 
         #lunches ul li {
-            margin-left: 10px;
             margin-top: 10px;
             font-size: 20px;
             font-weight: 700;
+        }
+        .title::before{
+            content: '▶';
+            color: green;
+        }
+
+        #lunches .title::before{
+            content: '▼';
+            color: green;
         }
     </style>
 </head>
@@ -40,7 +48,7 @@
 <body>
     <div id="lunches" class="menu">
         <span class="title">
-            <span id="angle">▶</span>추천 메뉴(Click Me!)
+            추천 메뉴(Click Me!)
         </span>
         <ul>
             <li>돈까스</li>
@@ -58,7 +66,11 @@
 
         }
 
-        const triAngle = document.getElementById('angle')
+        $spanTag.onclick=function(){
+            $spanTag.classList.toggle('title')
+
+        }
+
 
 
 

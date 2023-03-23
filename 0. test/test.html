@@ -1,30 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="test.js">
-
-
 </head>
-
 <body>
-    <div class="wrap">
-        <ul id="fruits">
-            <li class="fr apple">사과</li>
-            <li class="fr banana">바나나</li>
-            <li class="fr grape">포도</li>
-        </ul>
-    </div>
+    
+    <input type="email" id="account" value="abc@gmail.com">
 
-    <div class="box"></div>
     <script>
+        // const typeAttr = {
+        //     name: 'type',
+        //     value: 'email'
+        // };
+        // const idAttr = {
+        //     name: 'id',
+        //     value: 'account'
+        // };
+        // const valueAttr = {
+        //     name: 'value',
+        //     value: 'abc@gmail.com'
+        // };
+
+        // // 유사배열
+        // const NamedNodeMap = {
+        //     0: typeAttr,
+        //     1: idAttr,
+        //     2: valueAttr,
+        //     length: 3,
+        //     type: typeAttr,
+        //     id: idAttr,
+        //     value: valueAttr
+        // };
+
+        // const $input = {
+        //     tagName: 'INPUT',
+        //     textContent: '',
+        //     attributes: NamedNodeMap
+        // };
+
+        const $input = document.querySelector('input');
+
+        $input.attributes.id.value='acc';
+        $input.attributes.value.value='zzz';
+        $input.attributes.type.value='checkbox';
+
+        console.log($input.attributes.type.value); //NamedNodeMap
 
     </script>
 
 </body>
-
 </html>
