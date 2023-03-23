@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <title>Document</title>
+
+    <style>
+        #lunches {
+            margin: 20px auto;
+            width: 300px;
+        }
+
+        .title {
+            font-size: 20px;
+            font-weight: 700;
+
+        }
+
+        .title span {
+            color: green;
+        }
+
+        .hide {
+            display: none;
+        }
+
+        #lunches ul li {
+            margin-left: 10px;
+            margin-top: 10px;
+            font-size: 20px;
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="lunches" class="menu">
+        <span class="title">
+            <span id="angle">▶</span>추천 메뉴(Click Me!)
+        </span>
+        <ul>
+            <li>돈까스</li>
+            <li>군만두</li>
+            <li>볶음밥</li>
+            <li>마파두부</li>
+        </ul>
+    </div>
+
+    <script>
+        const [$spanTag, $ulTag] = [...document.getElementById('lunches').children];
+
+        $spanTag.onclick = function () {
+            $ulTag.classList.toggle('hide')
+
+        }
+
+        const triAngle = document.getElementById('angle')
+
+
+
+    </script>
+
+</body>
+
+</html>

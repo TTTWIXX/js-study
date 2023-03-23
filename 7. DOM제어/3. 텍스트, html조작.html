@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #greet span {
+            color: red;
+        }
+
+        #greet ::before {
+            content: "what's up!";
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="greet">
+        Hello <span>World!</span>
+    </div>
+    <script>
+        const $greet = document.getElementById(`greet`);
+
+        //변경하고 싶을때
+        // $greet.textContent = '하이요'; //안의 span태그도 다사라지는 단점이있다.
+        $greet.innerHTML = '하이요<span>바이</span>'; // innerHtml 은 태그들을 쓸수있다.
+        console.log($greet.textContent);
+
+        $greet.innerHTML=''; //싹날라감
+        //추가하고싶을때
+        $greet.innerHTML+='<span>ㅋ~<span>'
+    </script>
+
+
+
+
+</body>
+
+</html>

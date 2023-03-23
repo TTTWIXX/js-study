@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .dropdown {
+            margin: 0 auto;
+            width: 200px;
+        }
+
+        .btn {
+            background: brown;
+            width: 150px;
+            height: 50px;
+            color: lightgoldenrodyellow;
+            font-size: 18px;
+
+        }
+
+        .dropMenu {
+            display: flex !important;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #drop-content a {
+            background: lightgrey;
+            width: 100%;
+            text-align: center;
+            text-decoration: none;
+            color: #000;
+            margin: 3px 0 3px;
+            height: 60px;
+            line-height: 60px;
+            font-size: 20px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="dropdown">
+        <button class="btn">Drop</button>
+        <div style="display:none;" id="drop-content">
+            <a href="">Menu1</a>
+            <a href="">Menu2</a>
+            <a href="">Menu3</a>
+            <a href="">Menu4</a>
+            <a href="">Menu5</a>
+            <a href="">Menu6</a>
+        </div>
+    </div>
+    <script>
+        const [buttonTag, divTag] = [...document.querySelector('.dropdown').children]
+        // console.log(buttonTag);
+
+        buttonTag.onclick = function () {
+            divTag.classList.toggle('dropMenu')
+        }
+    </script>
+
+</body>
+
+</html>
