@@ -53,5 +53,5 @@ const foods = [`감튀`,`DQPC`,`징거버거`]
 //const copyFoods =foods 이건 배열복사가 아니라 배열주소를 복사한것이다.
 
 const copyFoods= [...foods]; // 실제 데이터 복사
-// 유사배열을 배열로 만들어준다. 유사배열은 slice를 쓸수없다.
-console.log(copyFoods);
+// 유사배열
+console.log(copyFoods);을 배열로 만들어준다. 유사배열은 slice를 쓸수없다.
