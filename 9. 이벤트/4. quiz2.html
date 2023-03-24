@@ -9,55 +9,34 @@
     <title>Document</title>
 
     <style>
-        #lunches {
-            margin: 20px auto;
-            width: 300px;
-        }
-
-        .title {
-            font-size: 20px;
-            font-weight: 700;
-
-        }
-
-
-        .hide {
+      .menu ul {
+            margin: 0;
+            list-style: none;
+            padding-left: 20px;
             display: none;
         }
-
-        #lunches ul li {
-<<<<<<< HEAD
-            margin-left: 20px;
-=======
->>>>>>> 0afc3845ccdbe58085b58a99101a37d7a98bfbfd
-            margin-top: 10px;
-            font-size: 20px;
-            font-weight: 700;
-
+        .menu .title {
+            font-size: 18px;
+            cursor: pointer;
         }
-
-        .title #angle {
-            color: green;
-            display: inline-block;
-            
-        }
-        .title::before{
-            content: '▶';
+        .menu .title::before {
+            content: '▶ ';
+            font-size: 80%;
             color: green;
         }
-
-        #lunches .title::before{
-            content: '▼';
-            color: green;
+        .menu.open .title::before {
+            content: '▼ ';
+        }
+        .menu.open ul {
+            display: block;
         }
     </style>
 </head>
 
 <body>
+    <!-- #lunches.menu>span.title+ul>li*4 -->
     <div id="lunches" class="menu">
-        <span class="title">
-            추천 메뉴(Click Me!)
-        </span>
+        <span class="title">추천 메뉴(Click Me!)</span>
         <ul>
             <li>돈까스</li>
             <li>군만두</li>
@@ -66,33 +45,21 @@
         </ul>
     </div>
 
+
     <script>
-        const [$spanTag, $ulTag] = [...document.getElementById('lunches').children];
-        const $angle = document.getElementById('angle')
+        /*
+        CSS와 JS를 적절히 사용하여 처음에는 ul이 보이지 않다가    
+        추천 점심 메뉴를 클릭하면 나타나도록 이벤트를 구현하세요.
+        */
+        const $lunches = document.getElementById('lunches');
+        const $title = $lunches.querySelector('.title');
 
-        $spanTag.onclick = function () {
-            $ulTag.classList.toggle('hide')
-        }
-        addEventListener('click', () =>{
-            if( $angle.style.transform === 'rotate(90deg)'){
-                $angle.style.transform ='';
-            }else{
-               $angle.style.transform = 'rotate(90deg)' 
-            }
-            
-        })
+        $title.addEventListener('click', function () {
+            //toggle: 해당클래스가 없으면 추가, 있으면 제거
+            $lunches.classList.toggle('open');
+        });  
 
-        $spanTag.onclick=function(){
-            $spanTag.classList.toggle('title')
-
-        }
-
-
-
-        //    $spanTag.onclick =function(){
-
-        //    }
-    </script>
+</script>
 
 </body>
 
