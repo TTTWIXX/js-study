@@ -26,7 +26,10 @@
         }
 
         #lunches ul li {
+<<<<<<< HEAD
             margin-left: 20px;
+=======
+>>>>>>> 0afc3845ccdbe58085b58a99101a37d7a98bfbfd
             margin-top: 10px;
             font-size: 20px;
             font-weight: 700;
@@ -38,13 +41,22 @@
             display: inline-block;
             
         }
+        .title::before{
+            content: '▶';
+            color: green;
+        }
+
+        #lunches .title::before{
+            content: '▼';
+            color: green;
+        }
     </style>
 </head>
 
 <body>
     <div id="lunches" class="menu">
         <span class="title">
-            <span id="angle">▶</span>추천 메뉴(Click Me!)
+            추천 메뉴(Click Me!)
         </span>
         <ul>
             <li>돈까스</li>
@@ -69,6 +81,12 @@
             }
             
         })
+
+        $spanTag.onclick=function(){
+            $spanTag.classList.toggle('title')
+
+        }
+
 
 
         //    $spanTag.onclick =function(){

@@ -14,14 +14,22 @@
         <li>사과</li>
     </ul>
     <script>
-        // 만들면서 추가하는 함수
-        // function appedn() 자리에 원래 3개를 받아야 하나 많기때문에 items라는
-        // 객체를 만들어 대입한다.
-        function append({$parent, tagName, text}) {
-                        // 쪼갠다. const split ={$parent, tagName, text}
+        const $fruits = document.getElementById('fruits');
 
-            appendNewTag($parent, makeTag(tagName, text));
-        }
+        //li태그 생성 : <li></li>
+        const $newLi = document.createElement('li');
+
+        // 텍스트 추가 <li>바나나</li>
+        $newLi.textContent = '바나나';
+
+        //새로운 노드를 자식으로 추가하는 명령
+
+        $fruits.appendChild($newLi);
+
+
+
+
+        //=========================================================
 
 
         //태그이름과 텍스트를 전달받으면 태그를 생성하는 함수
@@ -38,28 +46,25 @@
             $parent.appendChild($target);
 
         }
+        // 만들면서 추가하는 함수
+        // function append() 자리에 원래 3개를 받아야 하나 많기때문에 items라는
+        // 객체를 만들어 대입한다.
+        function append(items) {
+            const {
+                $parent,
+                tagName,
+                text
+            } = items
 
+            appendNewTag($parent, makeTag(tagName, text));
+        }
 
-
-
-        const $fruits = document.getElementById('fruits');
-
-        //li태그 생성 : <li></li>
-        const $newLi = document.createElement('li');
-
-        // 텍스트 추가 <li>바나나</li>
-        $newLi.textContent = '바나나';
-
-        //새로운 노드를 자식으로 추가하는 명령
-
-        $fruits.appendChild($newLi);
 
         const fruitNames = [
-            '바나나', '딸기', '포도'
-            , '자몽', '오렌지', '레몬'
+            '바나나', '딸기', '포도', '자몽', '오렌지', '레몬'
         ];
 
-        
+
         fruitNames.forEach(fn => {
 
             append({
@@ -68,12 +73,6 @@
                 text: fn
             });
         });
-
-
-
-
-
-
     </script>
 
 </body>

@@ -28,7 +28,8 @@
         // 노드 이동
         const [$apple, $mango, $banana, $grape] = [...$fruits.children];
 
-        $fruits.appendChild($apple);
+        $fruits.appendChild($apple); //원래 새로운 노드를 추가하는 기능이지만
+                                     // 기존 태그 대입시 맨마지막으로 이동
         $fruits.insertBefore($banana,$apple); //있던것을 넣으면 이동!!
         
 

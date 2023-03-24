@@ -13,8 +13,11 @@
 
         #greet ::before {
             content: "what's up!";
-            color: red;
+            color: blue;
         }
+        /* ::before 
+            선택한 요소의 첫 자식으로 의사 요소를 하나 생성합니다
+        */
     </style>
 </head>
 
@@ -29,11 +32,12 @@
         //변경하고 싶을때
         // $greet.textContent = '하이요'; //안의 span태그도 다사라지는 단점이있다.
         $greet.innerHTML = '하이요<span>바이</span>'; // innerHtml 은 태그들을 쓸수있다.
-        console.log($greet.textContent);
+        // console.log($greet);
 
-        $greet.innerHTML=''; //싹날라감
+
+        // $greet.innerHTML=''; //싹날라감
         //추가하고싶을때
-        $greet.innerHTML+='<span>ㅋ~<span>'
+        // $greet.innerHTML+='<span>왜 ::before가 하나 더생기지?</span>'
     </script>
 
 
