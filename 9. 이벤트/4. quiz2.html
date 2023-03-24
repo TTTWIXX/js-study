@@ -20,19 +20,23 @@
 
         }
 
-        .title span {
-            color: green;
-        }
 
         .hide {
             display: none;
         }
 
         #lunches ul li {
-            margin-left: 10px;
+            margin-left: 20px;
             margin-top: 10px;
             font-size: 20px;
             font-weight: 700;
+
+        }
+
+        .title #angle {
+            color: green;
+            display: inline-block;
+            
         }
     </style>
 </head>
@@ -52,16 +56,24 @@
 
     <script>
         const [$spanTag, $ulTag] = [...document.getElementById('lunches').children];
+        const $angle = document.getElementById('angle')
 
         $spanTag.onclick = function () {
             $ulTag.classList.toggle('hide')
-
         }
+        addEventListener('click', () =>{
+            if( $angle.style.transform === 'rotate(90deg)'){
+                $angle.style.transform ='';
+            }else{
+               $angle.style.transform = 'rotate(90deg)' 
+            }
+            
+        })
 
-        const triAngle = document.getElementById('angle')
 
+        //    $spanTag.onclick =function(){
 
-
+        //    }
     </script>
 
 </body>

@@ -7,21 +7,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="test.js">
+<style>
+
+
+  
+</style>
 
 
 </head>
 
 <body>
-    <div class="wrap">
-        <ul id="fruits">
-            <li class="fr apple">사과</li>
-            <li class="fr banana">바나나</li>
-            <li class="fr grape">포도</li>
-        </ul>
-    </div>
+    <button id="b1">클릭1</button>
+    <button id="b2">클릭2</button>
+    <button id="b3">클릭3</button>
 
-    <div class="box"></div>
+   
     <script>
+      
+
+        const [$b1,$b2,$b3]=[...document.querySelectorAll('button')];
+        $b1.onclick=function(){
+            alert('첫번째 박스 클릭함!')
+        }
+        $b2.onclick=function(){
+            $b2.style.width='150px'
+        }
+        $b3.onmouseover=function(){
+            $b3.style.background='red'
+        }
+        $b3.onmouseout=function(){
+            $b3.style.background='yellow'
+        }
+
 
     </script>
 
