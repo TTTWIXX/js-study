@@ -96,7 +96,9 @@ console.log(newArr);
 function selectRandomPet(){
     var pets = [`강아지`,`고양이`,`거북이`,`비둘기`]
     return pets[Math.floor(Math.random()*pets.length)]
+    
 }
 
 var randomPet = selectRandomPet();
+                //()를 빼면 함수 전체를 가져오느것이고, ()를 넣으면 함수의 값만 가져온다.
 console.log(`램덤동물 : ${randomPet}`);

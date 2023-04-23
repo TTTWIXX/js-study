@@ -1,6 +1,12 @@
 
 
 // var sentence = '<ul>\n\t<li>\n\t\t<a>ddd</a>';
+var practice=`
+<li>
+    <h1>안녕</h1>
+</li>
+`;
+console.log(practice);
 var sentence = `
 <ul>
     <li>
@@ -14,6 +20,8 @@ console.log(sentence);
 var month = 5;
 var day = 5;
 var anniversary = '어린이날';
+
+
 
 // var message = month + '월 ' 
 //                 + day + '일은 '
