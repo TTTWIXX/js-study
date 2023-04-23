@@ -9,6 +9,8 @@ function add(n1,n2){
 var r1 = add(5,7);
 
 add(r1,r1*2); // add(12,24)
+console.log(add(r1,r1*2));
+console.log('----------------');
 
 
 // 함수가 중첩시 실행 순서

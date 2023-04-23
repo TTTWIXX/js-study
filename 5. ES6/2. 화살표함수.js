@@ -3,6 +3,10 @@ function multi(n1, n2) {
     return n1 * n2;
 }
 
+const multi=function(n1, n2){
+  return n1*n2;
+}
+
 // 함수 표현식
 // const multi = function(n1, n2){
 //     return n1*n2;
