@@ -25,24 +25,27 @@
 <script>
     document.onclick = function (e) {
         // console.log(`x: ${e.x}, y: ${e.y}`);
-        const {
-            x,
-            y
-        } = e;
+        const {x, y} = e;
         const $em = document.querySelector('.msg');
         $em.textContent = `x: ${x}, y:${y}`
     }
 
-    const $textInput = document.querySelector('[type=text]');
-    // console.log($textInput);
+    const $textInput = document.querySelector('[type=text]'); //type이 text인 것.
+    console.log($textInput);
 
-    $textInput.addEventListner('keyup', (e) => {
-        // console.log(e);
+    $textInput.addEventListener('keyup', (e) => {
+        console.log(e);
         const $show=document.querySelector('.show');
         if (e.key === 'Enter') {
             $show.textContent = $textInput.value;
         }
     });
+
+
+
+
+
+
 </script>
 
 </html>

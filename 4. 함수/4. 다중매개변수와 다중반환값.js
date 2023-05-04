@@ -41,7 +41,6 @@ function  operateAll(n1, n2) {
         multi : n1*n2,
         div : n1/n2};
         //함수 재활용!
-   
 }
 
 var result = operateAll(10,5);
@@ -49,3 +48,4 @@ console.log(`덧셈결과 : ${result.plus}`);
 console.log(`뺄셈결과 : ${result.minus}`);
 console.log(`곱셈결과 : ${result.multi}`);
 console.log(`나눗셈결과 : ${result.div}`);
+console.log(result);

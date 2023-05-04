@@ -66,6 +66,9 @@ function showMessage(message, howTo) {
   }, 500);
 }
 
+
+
+
 showMessage('메롱메롱', function (m) {
   const answer = prompt(m);
   if (answer === '즐')

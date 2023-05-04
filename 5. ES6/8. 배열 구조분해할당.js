@@ -54,4 +54,5 @@ const foods = [`감튀`,`DQPC`,`징거버거`]
 
 const copyFoods= [...foods]; // 실제 데이터 복사
 // 유사배열
-console.log(copyFoods);을 배열로 만들어준다. 유사배열은 slice를 쓸수없다.
+console.log(copyFoods);
+//을 배열로 만들어준다. 유사배열은 slice를 쓸수없다.

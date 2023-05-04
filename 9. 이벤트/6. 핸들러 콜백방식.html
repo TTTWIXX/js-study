@@ -16,6 +16,7 @@
         function hello() {
             alert('안녕');
         }
+        const hello=()=>alert('안녕')
 
         const $btn = document.getElementById('btn');
 
@@ -29,10 +30,11 @@
 
         // addEventListener로 중복 실행되게 만들수 있다.
         $btn.addEventListener('click', hello)
+        
         $btn.addEventListener('click', () => {
             $btn.style.background = 'aqua'
-
         })
+
         // 핸들러 제거(단 이름없는 함수는 제거 못함)
         $btn.removeEventListener('click',hello);
 

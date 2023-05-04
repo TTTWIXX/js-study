@@ -1,32 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link rel="stylesheet" href="../common.css">
     <title>Document</title>
-    <link rel="stylesheet" href="test.js">
-    <style>
-        .hide {
-            display: none;
-        }
-    </style>
-
 </head>
+<style>
+    .root {
+            width: 300px;
+            height: 300px;
+            background: red;
+        }
+        .parent {
+            width: 200px;
+            height: 200px;
+            background: green;
+        }
+        .child {
+            width: 100px;
+            height: 100px;
+            background: blue;
+        }
+        .target {
+            width: 50px;
+            height: 50px;
+            background: black;
+        }
+</style>
 
 <body>
-
-    <button id="text">텍스트 숨기기</button>
-    <div id="hi">안녕하세요</div>
+    <div class="root">
+        <div class="parent">
+            <div class="child">
+                <div class="target"></div>
+            </div>
+        </div>
+    </div>
 
     <script>
-        document.getElementById('text').onclick = function () {
-            const hi = document.getElementById('hi');
-            hi.classList.toggle('hide');
-        }
-    </script>
+        const [$list] =[...document.querySelector('.root').children];
+        if($list.classList.contains('parent'))
+        alert('parent 가지고있음')
 
+
+        document.querySelector('.root').onclick=e=>
+        console.log(e.target);
+
+    </script>
 </body>
 
 </html>
