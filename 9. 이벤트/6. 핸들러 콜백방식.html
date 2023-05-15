@@ -13,18 +13,18 @@
 
     <script>
         //핸들러
-        function hello() {
-            alert('안녕');
-        }
+        // function hello() {
+        //     alert('안녕');
+        // }
         const hello=()=>alert('안녕')
 
         const $btn = document.getElementById('btn');
 
-        // $btn.onclick=hello;
+        $btn.onclick=hello;
 
-        // $btn.onclick=function(){
-        //     $btn.style.background='aqua'
-        // }
+        $btn.onclick=function(){
+            $btn.style.background='aqua'
+        }
 
         //hello 함수가 작동하지않는다.
 
@@ -36,7 +36,7 @@
         })
 
         // 핸들러 제거(단 이름없는 함수는 제거 못함)
-        $btn.removeEventListener('click',hello);
+        // $btn.removeEventListener('click',hello);
 
     </script>
 
